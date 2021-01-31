@@ -98,7 +98,7 @@ jobs:
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
 
     - name: SSH远程连接服务器配置固件
-      uses: P3TERX/debugger-action@main
+      uses: P3TERX/ssh2actions@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
     - name: 下载软件包
