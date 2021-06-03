@@ -33,12 +33,12 @@ on:
 
 #点☆Star触发开始编译
   watch:
-#    types: started
+    types: started
 
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: dev-master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: diy.config
   DIY_OP_SH: diy-lede.sh
